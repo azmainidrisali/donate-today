@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+.header{/* text-align: center; *//* padding: 143px 0px; *//* background-image: url(./images/donation2.jpg); *//* background-repeat: no-repeat; */background-size: 100%;}
+
+.headerText {
+    text-align: center;
+    padding: 177px 0px;
+    background-image: url(./images/donation2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.headerText::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(3deg, #00000094 11%, #6060609e 100%);
+    z-index: 0;
+}
+
+.headerText > * {
+    z-index: 100;
+    position: relative;
+}
+
+
+.headerText h1 {
+    margin-bottom: 35px;
+    color: #ffffff;
+    font-size: 89px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.headerText p {
+    margin-bottom: 36px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+}
+
+.headerText button {
+    background: #ff5959;
+    border-style: none;
+    padding: 14px 18px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+
+/*Donate today*/
+.DonateToday {
+    text-align: center;
+    padding: 89px 0px;
+}
+
+.DonateToday h1 {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #261f2e;
+    font-size: 64px;
+}
+
+.amount {
+    margin: 65px 0px;
+}
+
+.DonateToday p {
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+}
+
+.DonateToday .amount span {
+    margin: 20px;
+    background: #ffeeee;
+    padding: 35px 30px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 43px;
+    color: #707070;
+}
+
+.OtherAmount input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    padding: 13px 13px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.DonateToday button {
+    background: #ff5959;
+    border-style: none;
+    padding: 14px 18px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 20px 0px;
+    font-size: 26px;
+}
+
+.DonateToday .amount span:hover {
+    border: 4px solid #ff5959;
+}
+
+/*Our DOnate Plan*/
+.ourDonatePlan h1 {
+    text-align: center;
+    padding: 11px 0px;
+    font-size: 54px;
+    font-family: 'Roboto', sans-serif;
+    color: #121212;
+}
+.ourDonatePlan p {
+    text-align: center;
+    padding: 13px 0px;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+}
+
+.donatePlanBoxes {
+    display: flex;
+}
+
+.donatePlanBoxes .boxInfo {
+    width: 30%;
+    padding: 32px;
+    margin: 0px 20px;
+    border-radius: 6px;
+}
+
+.donatePlanBoxes .boxInfo p {
+    text-align: left;
+}
+
+.boxInfo h2 {
+    padding: 19px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.backgroundRed{
+    background-color: #edf5f6;
+}
+
+.backgroundGreen{
+    background-color: #ffeeee;
+}
+
+.backgroundYellow{
+    background-color: #fff4d6;
+}
+
+/*How to contribute*/
+
+div#InfoHowToContributeRight {
+    display: flex;
+    margin: 47px 0px;
+}
+
+div#InfoHowToContributeLeft {
+    display: flex;
+    margin: 47px 0px;
+}
+
+#InfoHowToContributeRight .TextInfo {
+    width: 50%;
+}
+#InfoHowToContributeRight .image {
+    width: 50%;
+}
+
+div#InfoHowToContributeRight .image {
+    background-image: url(./images/donation0.jpg);
+    background-size: cover;
+    height: 550px;
+    width: 522px;
+    border-radius: 7px;
+}
+
+div#InfoHowToContributeRight button {
+    background: #ff5959;
+    border-style: none;
+    padding: 14px 18px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 20px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+#InfoHowToContributeLeft .TextInfo {
+    width: 50%;
+    margin-left: 37px;
+}
+#InfoHowToContributeLeft .image {
+    width: 50%;
+}
+
+div#InfoHowToContributeLeft .image {
+    background-image: url(./images/donation0.jpg);
+    background-size: cover;
+    height: 550px;
+    width: 522px;
+    border-radius: 7px;
+}
+
+div#InfoHowToContributeLeft button {
+    background: #ff5959;
+    border-style: none;
+    padding: 14px 18px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 20px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.TextInfo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+}
+
+.TextInfo p {
+    font-family: 'Roboto', sans-serif;
+    color: #777777;
+    padding: 24px 0px;
+    font-size: 24px;
+}
+
+/*Get Update*/
+.getMyUpdates {
+    text-align: center;
+}
+
+.getMyUpdates .subscribNewsletter {
+    background: #fff4d6;
+    padding: 106px 30px;
+    border-radius: 3px;
+    margin: 75px 56px;
+}
+
+.getMyUpdates h1 {
+    margin: 29px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 65px;
+}
+
+.getMyUpdates p {
+    margin: 30px 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+    font-size: 22px;
+}
+
+.subscribNewsletter input[type="text"] {
+    background: #d9d9d9;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 26px;
+    padding: 18px 0px 17px 10px;
+    border-style: none;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subscribNewsletter button {
+    background: #ff5959;
+    border-style: none;
+    padding: 19px 20px 17px 33px;
+    border-radius: 0px 5px 5px 0px;
+    color: #ffffff;
+    margin: 0px 0px 0px -5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    width: 184px;
+}
+
+/**/
+footer {
+    background: #0b0d17;
+    padding: 55px 0px;
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px 0px;
+}
+
+footer h1 {
+    font-family: 'Lobster', cursive;
+    color: #ff5959;
+    font-size: 59px;
+}
+
+/*End Al hamdulliah*/
